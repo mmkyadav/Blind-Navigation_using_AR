@@ -1,72 +1,78 @@
 # AR-Based Navigation Assistance System for the Visually Impaired
 
 ## Overview
-This project presents an augmented reality (AR) based assistive navigation system designed to support visually impaired individuals during indoor and outdoor navigation. The system focuses on real-time obstacle awareness and environment understanding using computer vision and AI techniques, with guidance delivered through non-visual feedback.
 
-The work was developed as an academic research prototype and documented through a detailed project report. The research was accepted and presented at an academic conference.
+This project is an assistive navigation solution designed to support visually impaired users by combining real-time object detection, augmented reality (AR) technology, and audio guidance. The system interprets the user’s environment using computer vision and provides relevant audio feedback to help navigate safely.
 
----
-
-## Problem Statement
-Visually impaired individuals face significant challenges in navigating unfamiliar environments due to the lack of real-time spatial awareness and obstacle detection. Traditional assistive tools provide limited contextual information and often fail in dynamic environments.
+This repository includes the project documentation and the official paper publication certificate.
 
 ---
 
-## Proposed Solution
-The proposed system integrates:
-- Real-time camera input for environmental perception
-- AI-based object and obstacle detection
-- Augmented reality processing for scene understanding
-- Audio-based guidance to assist safe navigation without visual dependency
+## Features
 
-The system aims to enhance user independence and situational awareness.
+- **Real-time Obstacle Detection**  
+  Uses a deep learning model to detect obstacles and common objects from a live camera feed.
+
+- **Augmented Reality (AR) Integration**  
+  Provides spatial awareness and environment interpretation using AR capabilities in Unity.
+
+- **Audio Guidance**  
+  Generates voice alerts and descriptive feedback to guide the user using text-to-speech.
 
 ---
 
-## System Highlights
-- Real-time obstacle detection using computer vision
-- AR-assisted environment interpretation
-- Audio alerts for navigation assistance
-- Designed as a low-cost, scalable assistive solution
+## How It Works
+
+1. The device camera captures live video feed.
+2. A trained object detection model processes each frame to identify obstacles.
+3. Detected information is passed to the AR framework for scene interpretation.
+4. Relevant audio guidance is generated and delivered to the user in real time.
 
 ---
 
 ## Technologies Used
-- Python  
-- OpenCV  
-- Computer Vision  
-- Object Detection  
-- Augmented Reality  
-- AI / Machine Learning  
+
+- **YOLOv5** – Real-time object detection model used for detecting surrounding objects and obstacles.
+- **Unity Engine** – Project developed within Unity for AR integration and application logic.
+- **Unity AR Framework** – Used for rendering AR visuals and environmental context.
+- **Unity Sentis** – Used for on-device neural network inference of the detection model.
+- **Google Text-to-Speech (TTS)** – Converts guidance text into spoken audio feedback.
+- **Computer Vision & AI / ML** – Core logic for processing and interpreting environmental data.
 
 ---
 
-## Documentation
-- **Project_Report.pdf** – Complete academic project report including system design, methodology, and evaluation.
-- **Conference_Publication_Certificate.pdf** – Official certificate confirming acceptance and presentation at an academic conference.
+## Certificate
+
+The official paper publication certificate can be viewed here:  
+**[Paper Publication Certificate (Blind Navigation using AR)](https://github.com/mmkyadav/Blind-Navigation_using_AR/blob/30784203b13176f77e882333d44947aa1b3bbe2b/Paper%20publication%20certificate.jpeg)**
 
 ---
 
-## Publication Status
-This work was accepted and presented at an academic conference.  
-The official publication certificate is included in this repository.  
-The online conference proceedings link is currently unavailable.
+## Repository Contents
+
+- `README.md` – Project explanation and details  
+- `Project_Report.pdf` – Detailed documentation describing the problem, design, and methodology (if included)  
+- `Paper publication certificate.jpeg` – Certificate confirming presentation of the work  
 
 ---
 
-## Note on Implementation
-This repository focuses on academic documentation and research outcomes.  
-The implementation was developed as a prototype for feasibility validation and educational purposes.
+## Limitations
+
+- Prototype-level implementation intended for feasibility validation.
+- Performance varies with lighting conditions and camera quality.
+- Requires further optimization for real-time use on low-power AR devices.
 
 ---
 
-## Future Scope
-- Re-implementation of a minimal proof-of-concept
-- Integration with wearable AR devices
-- Enhanced object recognition and path guidance
-- Field testing with real users
+## Future Work
+
+- Re-implement a minimal demo version for real-time testing.
+- Extend object classes to include more environmental features.
+- Integrate with wearable AR headsets for hands-free use.
+- Conduct user testing with visually impaired individuals for feedback-driven improvements.
 
 ---
 
 ## Author
+
 M. Muddu Krishna
